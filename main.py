@@ -5,23 +5,16 @@ from energy_adding import energy
 import pyautogui
 
 monitor_loc ,monitor_leng = finding_monitor.find_monitor()
+print(f'Farmersworld Detected : {monitor_leng}')
 
 while True:
-        ## Open Monitor ##
-        monitor_loc[1].minimize()
-        monitor_loc[0].minimize()
-        monitor_loc[0].maximize()
-        water.watering()
-        energy.add_energy()
-        pyautogui.screenshot('main.png')
-        line.line_pic('ของแม่', 'main.png')
+        for i in range(len(monitor_leng)):
+                ## Open Monitor ##
+                monitor_loc[i].minimize()
+                monitor_loc[i].maximize()
+                water.watering()
+                energy.add_energy()
 
-        monitor_loc[1].minimize()
-        monitor_loc[0].minimize()
-        monitor_loc[1].maximize()
-        water.watering()
-        energy.add_energy()
-        pyautogui.screenshot('main.png')
-        line.line_pic('ของพ่อ', 'main.png')
-
-    
+                ## Screenshot for line notify ##
+                pyautogui.screenshot('main.png')
+                line.line_pic(f'{i}', 'main.png')
