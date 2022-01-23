@@ -8,7 +8,7 @@ barley_img = [(642, 385), (650, 464), (645, 555), (649, 646), (647, 421), (647, 
 
 class water:
     def loop_water(start, stop):
-        for i in range(4):
+        for i in range(start, stop + 1):
             ## Click each barley images ##
             pyautogui.click(barley_img[i])
             time.sleep(1)
