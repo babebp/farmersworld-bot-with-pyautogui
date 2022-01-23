@@ -18,4 +18,5 @@ class energy:
         pyautogui.click(exchange_button)
         time.sleep(8)
         pyautogui.click(approve_button)
+        time.sleep(2)
         print('---------Energy Adding Success---------')
