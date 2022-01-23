@@ -1,6 +1,5 @@
 import pyautogui
 import time
-from line_notify import line
 
 ## Coordinate for each image ##
 water_button = (1037, 665)
