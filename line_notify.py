@@ -1,7 +1,7 @@
 import requests
 import time
 
-line_token = 'zO29kfiZhpQrxjXTurjBleVR2cnkfpwMnfTKunfZHEV'
+line_token = 'LINE TOKEN' #You can get it from Line notify
 URL_LINE = "https://notify-api.line.me/api/notify" 
 
 class line:
