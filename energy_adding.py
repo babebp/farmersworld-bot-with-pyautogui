@@ -1,4 +1,3 @@
-from pickletools import pybytes
 import pyautogui
 import time
 
