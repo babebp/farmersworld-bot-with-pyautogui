@@ -1,7 +1,7 @@
-from find_monitor import finding_monitor
-from water_auto import water
-from line_notify import line
-from energy_adding import energy
+from modules.find_monitor import finding_monitor
+from modules.water_auto import water
+from modules.line_notify import line
+from modules.energy_adding import energy
 import pyautogui
 
 monitor_loc ,monitor_leng = finding_monitor.find_monitor()
